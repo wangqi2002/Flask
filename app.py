@@ -13,14 +13,14 @@ from app.vision.routes import vision_bp
 # 注册蓝图 (添加了静态文件处理)
 app.register_blueprint(
     robot_bp,
-    url_prefix='/api/robot',
+    url_prefix='/robot',
     # static_folder='static',  # 可选的静态文件配置
     # template_folder='templates'
 )
 
 app.register_blueprint(
     vision_bp,
-    url_prefix='/api/vision',
+    url_prefix='/vision',
     # static_folder='static',  # 可选的静态文件配置
     # template_folder='templates'
 )

@@ -4,4 +4,6 @@ robot_bp = Blueprint('robot', __name__)
 
 @robot_bp.route('/')
 def index():
-    return "robot"
+    comment = request.values.get("question")
+    print(comment)
+    return "这里是机器人提供的答复"
